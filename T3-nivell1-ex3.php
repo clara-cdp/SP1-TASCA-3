@@ -7,7 +7,7 @@ La funció ens retorna true si totes les paraules de l’array tenen el caràcte
 $myArray = ["php", "html", "python",];
 $myOtherArray = ["javascript", "css", "java", "Go",];
 $myChar = "h";
-$myotherchar = "a";
+$myOtherChar = "a";
 
 function checkChar($arrayWords, $character)
 {
@@ -20,11 +20,11 @@ function checkChar($arrayWords, $character)
 }
 
 $result = checkChar($myArray, $myChar);
-echo $result ? "Totes les paraules contenen el caràcter '$myChar'." : "No totes les paraules contenen el caràcter '$myChar'.";
+echo $result ? "All the words in the array contain $myChar." : "Not all the word conatain $myChar";
 
-echo "<br>\n";
-$result2 = checkChar($myOtherArray, $myotherchar);
-echo $result2 ? "Totes les paraules contenen el caràcter '$myotherchar'." : "No totes les paraules contenen el caràcter '$myotherchar'.";
+echo PHP_EOL;
+$result2 = checkChar($myOtherArray, $myOtherChar);
+echo $result2 ? "All the words in the array contain $myOtherChar." : "Not all the word conatain $myOtherChar";
 
 
 

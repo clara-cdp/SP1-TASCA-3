@@ -7,14 +7,18 @@ $list2 = ["Ranma", "Akane", "Xampu", "Ryoga", "Taro"];
 
 #La llista de convidats en comú entre les dues llistes.
 $commonGuests = array_intersect($list1, $list2);
-//var_dump($commonGuests);
+//print_r($commonGuests);
 echo "Convidats en comú: " . implode(", ", $commonGuests) . "\n";
+
 
 #La mescla de la llista de convidats(sense repeticions).
 $newList = array_merge($list1, $list2);
 $newList = array_unique($newList);
-//var_dump($newList);
+//print_r($newList);
+$newList = array_values($newList);
+//print_r($newList);
 echo "Convidats, sense repeticions: " . implode(", ", $newList) . "\n";
+
 
 #La llista de convidats exclusius de la primera llista.
 $exclusiveList1 = [];
@@ -26,6 +30,7 @@ foreach ($list1 as $guest) {
 }
 
 echo "Convidats exclusius de la llista-1: " . implode(", ", $exclusiveList1) . "\n";
+//print_r($exclusiveList1);
 
 #La llista de convidats exclusius de la segona llista.
 $exclusiveList2 = [];
@@ -37,3 +42,4 @@ foreach ($list2 as $guest) {
 }
 
 echo "Convidats exclusious de la llista-2: " . implode(", ", $exclusiveList2);
+//print_r($exclusiveList2);
