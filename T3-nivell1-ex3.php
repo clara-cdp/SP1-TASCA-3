@@ -5,7 +5,7 @@ echo "<h3> * * *TASCA-3 * NIVELL 1 * Exercici 3 * * * <br></h3>\n";
 La funció ens retorna true si totes les paraules de l’array tenen el caràcter passat com a segon paràmetre.*/
 
 $myArray = ["php", "html", "python",];
-$myOtherArray = ["javascript", "css", "java", "Go",];
+$myOtherArray = ["javaScript", "css", "java", "Go",];
 $myChar = "h";
 $myOtherChar = "a";
 

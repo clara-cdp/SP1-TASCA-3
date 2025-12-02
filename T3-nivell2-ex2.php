@@ -16,21 +16,22 @@ $studentRoster = array(
     "Ringo" => array(4, 6, 7, 9, 8)
 );
 
-function calcAverageGrade($array)
+const ALL_GRADES = 5;
+
+function calcAverageGrade(array $array)
 {
-    //$avergageGrade = 0;
-    $sum = 0;
-    foreach ($array as $x => $name) {
-        foreach ($name as $grade) {
-            $sum += $grade;
-            echo $sum . "\n";
-        }
+    $ClassAverage = 0;
+
+    foreach ($array as $student => $grade) {
+        $totalSumofGrades = array_sum($grade);
+        $studentAverage = $totalSumofGrades / ALL_GRADES;
+
+        echo "The average grade of $student is $studentAverage." . PHP_EOL;
+
+        $ClassAverage += $studentAverage;
     }
+
+    echo "The class average is $ClassAverage .";
 }
 
 calcAverageGrade($studentRoster);
-
-
-
-
-//var_dump($studentRoster);
