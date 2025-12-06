@@ -6,6 +6,7 @@
 _Creació i manipulació d'arrays en PHP_
 
 NIVELL 1 completat
+NIVELL 2 completat
 
 
 ### Tecnologies
