@@ -9,7 +9,7 @@ $myOtherArray = ["javaScript", "css", "java", "Go",];
 $myChar = "h";
 $myOtherChar = "a";
 
-function checkChar($arrayWords, $character)
+function checkChar($arrayWords, $character): bool
 {
     foreach ($arrayWords as $word) {
         if (strpos($word, $character) === false) {
