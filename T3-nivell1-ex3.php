@@ -1,8 +1,8 @@
 <?php
-echo "<h3> * * *TASCA-3 * NIVELL 1 * Exercici 3 * * * <br></h3>\n";
+echo "<h3> * * *TASCA-3 * NIVELL 1 * Exercici 3 * * *</h3>
 
-/*Crea una funció que rebi com a paràmetres un array de paraules i un caràcter. 
-La funció ens retorna true si totes les paraules de l’array tenen el caràcter passat com a segon paràmetre.*/
+<P>Crea una funció que rebi com a paràmetres un array de paraules i un caràcter. 
+La funció ens retorna true si totes les paraules de l’array tenen el caràcter passat com a segon paràmetre.</P>";
 
 $myArray = ["php", "html", "python",];
 $myOtherArray = ["javaScript", "css", "java", "Go",];
@@ -20,11 +20,11 @@ function checkChar($arrayWords, $character): bool
 }
 
 $result = checkChar($myArray, $myChar);
-echo $result ? "All the words in the array contain $myChar." : "Not all the word conatain $myChar";
+echo $result ? "The words: " . implode(", ", $myArray) . ", contain $myChar." : "Not all the word conatain $myChar";
 
-echo PHP_EOL;
+echo "<br>";
 $result2 = checkChar($myOtherArray, $myOtherChar);
-echo $result2 ? "All the words in the array contain $myOtherChar." : "Not all the word conatain $myOtherChar";
+echo $result2 ? "The words in the " . implode(", ", $myOtherArray) . "contain $myOtherChar." : "Not all the word conatain $myOtherChar";
 
 
 

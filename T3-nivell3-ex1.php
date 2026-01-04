@@ -15,5 +15,11 @@ function calcCube(int $number)
 
 print_r(array_map("calcCube", $Fibonacci));
 
+/* ----------- solution 2 ---------------*/
+
+$cubos = array_map(fn($n) => $n ** 3, $Fibonacci);
+
+print_r($cubos);
+
 
 //https://www.w3schools.com/php/func_array_map.asp
